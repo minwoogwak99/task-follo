@@ -1,0 +1,97 @@
+.card-wrap {
+  display: flex;
+  background-color: #fff;
+  width: 80vw;
+  margin-inline-end: 50px;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+
+  .card-left-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      .status-badge {
+        color: #fff;
+        margin-right: 12px;
+        border-radius: 16px;
+        padding: 3px 10px;
+        font-size: 12px;
+      }
+      .pre {
+        background-color: #0a2540;
+      }
+      .working {
+        background-color: #2260ff;
+      }
+      .done {
+        background-color: #797e9c;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .requested-time {
+      font-size: 14px;
+      gap: 18px;
+
+      .time-passed {
+        color: red;
+      }
+    }
+  }
+
+  .card-right-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    .time-left-wrap {
+      color: #2260ff;
+    }
+
+    .status-button {
+      background-color: #2260ff;
+      padding: 6px 13px;
+      color: #fff;
+      border: none;
+      width: 80px;
+      border-radius: 4px;
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+
+    .active {
+      cursor: pointer;
+    }
+
+    .done-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 50px;
+
+      div {
+        display: inline-block;
+      }
+
+      .duration {
+        font-size: 14px;
+      }
+
+      .time-diff {
+        align-self: flex-end;
+      }
+    }
+  }
+}
